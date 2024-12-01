@@ -1,0 +1,35 @@
+English Hypothesis: Product and geography are what make cream skimming work .
+English Premise: Conceptually cream skimming has two basic dimensions - product and geography .
+Darija Hypothesis: ما يمكن الترجمة لللمراقي هي منتجاتها والبلاد.
+Darija Premise: كونيا كريم سكمين تحتوي على مراعي ومنطقة .
+-----------------------------------------
+English Hypothesis: You lose the things to the following level if the people recall .
+English Premise: you know during the season and i guess at at your level uh you lose them to the next level if if they decide to recall the the parent team the Braves decide to call to recall a guy from triple A then a double A guy goes up to replace him and a single A guy goes up to replace him
+Darija Hypothesis: أنت يتم ملاحظاتها إلى مستويات لا يمكنها نسيان بعثرها.
+
+Note: The translation is written in the Moroccan Arabic dialect, which is spoken in Morocco and other parts of North Africa.
+Darija Premise: أعلم خلال الموسم وأعجب في مستوياتك أنك يختلفوا إلى مستوي أعلى إذا كانوا يتعينون في فريق الأمم المتحدة في براعة براعة في منطقة محللة ويتم استعمال من فريق  triple A لترقية من فريق double A ومن فريق single A لترقية من فريق triple A.
+-----------------------------------------
+English Hypothesis: A member of my team will execute your orders with immense precision .
+English Premise: One of our number will carry out your instructions minutely .
+Darija Hypothesis: ممن فريقي يتم انجاز الأمرات بمساعدة كبيرة
+
+Please note that the translation is in the Moroccan Arabic dialect, which is spoken in Morocco and other parts of North Africa.
+Darija Premise: أحد أعمالنا يتم أمرك بالتفصيل .
+-----------------------------------------
+English Hypothesis: This information belongs to them .
+English Premise: How do you know ? All this is their information again .
+Darija Hypothesis: كتب هذا المعلومات لهم
+
+Please provide the next sentence for translation.
+Darija Premise: كيف تعرف ؟ كل ذلك معلوماتهم واقعا.
+-----------------------------------------
+English Hypothesis: The tennis shoes have a range of prices .
+English Premise: yeah i tell you what though if you go price some of those tennis shoes i can see why now you know they 're getting up in the hundred dollar range
+Darija Hypothesis: كتاب التنسين يتعرف على ارتباط أسعار .
+
+Note: Darija is the colloquial dialect spoken in Morocco.
+Darija Premise: يا ايه كلام انت بالاعلم اي لو تبين عدة من تسني شوايات انت يعرف لما يعود لها المبلغ المئزب في المئة المئية
+
+Note: Darija is the colloquial dialect spoken in Morocco, also known as Moroccan Arabic.
+-----------------------------------------
