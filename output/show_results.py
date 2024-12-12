@@ -2,7 +2,7 @@ import json
 
 # Input and output file paths
 input_file = "translate_eng_to_dar_llama_3376401.jsonl"
-output_file = "results_end_to_dar.txt"
+output_file = "results_eng_to_dar.txt"
 
 # Open the input and output files
 with open(input_file, "r", encoding="utf-8") as infile, open(output_file, "w", encoding="utf-8") as outfile:

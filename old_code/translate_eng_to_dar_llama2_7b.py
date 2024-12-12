@@ -52,8 +52,8 @@ if __name__ == "__main__":
             #premise_prompt = f"Translate English sentence to Moroccan Arabic (Darija). Only respond with the translation output.\n\nEnglish: {premise_en}\nDarija:"
             # third attempt: problem (check output 3376179) still yields Note about arabic dialect in English
             #premise_prompt = f"Translate English sentence to the Moroccan Arabic dialect. Only respond with the translation output written in Arabic script.\n\nEnglish: {premise_en}\nDarija:"
-            # thirs attempt
-            premise_prompt = f"Translate English sentence to the Moroccan Arabic dialect. Only use the Arabic script to write the translation. Only respond with the translated sentence. Do not include anything written in English.\n\nEnglish: {premise_en}\nDarija:"
+            # fourth attempt
+            premise_prompt = f"Translate the following English sentence to Moroccan Arabic. Only respond with the translated sentence in Arabic letters.\n\nEnglish: {premise_en}\nMoroccan Arabic:"
 
             inputs = tokenizer(premise_prompt, return_tensors="pt", padding=True, truncation=True).to("cuda")
             outputs = model.generate(inputs["input_ids"], max_new_tokens=256, do_sample=False)
@@ -63,7 +63,7 @@ if __name__ == "__main__":
             premise_darija = premise_translation.split("Darija:")[-1].strip()
 
             # Translate hypothesis
-            hypothesis_prompt = f"Translate English sentence to the Moroccan Arabic dialect. Only respond with the translation output written in Arabic script.\n\nEnglish: {hypothesis_en}\nDarija:"
+            hypothesis_prompt = f"Translate the following English sentence to Moroccan Arabic. Only respond with the translated sentence in Arabic letters.\n\nEnglish: {hypothesis_en}\nMoroccan Arabic:"
             inputs = tokenizer(hypothesis_prompt, return_tensors="pt", padding=True, truncation=True).to("cuda")
             outputs = model.generate(inputs["input_ids"], max_new_tokens=256, do_sample=False)
             hypothesis_translation = tokenizer.decode(outputs[0], skip_special_tokens=True)

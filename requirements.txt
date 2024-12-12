@@ -2,3 +2,4 @@ torch>=1.13.0
 transformers>=4.30.0
 datasets>=2.8.0
 jsonlines>=3.0.0
+accelerate>=0.26.0
