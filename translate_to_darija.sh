@@ -4,7 +4,7 @@ OUTPUT_DIR="/fs/clip-scratch/eloirghi/CMSC828J_final_project/output"
 CACHE_DIR="/fs/clip-scratch/eloirghi/CMSC828J_final_project/.cache"
 
 # Define lists of models and languages
-MODEL_NAMES=("meta-llama/Llama-2-7b-chat-hf") #"meta-llama/Llama-2-13b-chat-hf") "meta-llama/Llama-2-7b-chat-hf" "CohereForAI/aya-23-8B" "Unbabel/TowerInstruct-7B-v0.2"
+MODEL_NAMES=("meta-llama/Llama-3.1-8B") #"meta-llama/Llama-2-13b-chat-hf") "meta-llama/Llama-2-7b-chat-hf" "CohereForAI/aya-23-8B" "Unbabel/TowerInstruct-7B-v0.2"
 LANGUAGES=("en" "ar")
 
 # Iterate over all model-language combinations
