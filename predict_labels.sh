@@ -31,7 +31,7 @@ for MODEL_NAME_HF in "${MODEL_NAMES[@]}"; do
     # Launch the Python script as a background job, redirecting output and error
     python predict_labels.py \
       --model_name_hf "$MODEL_NAME_HF" \
-      --source_language "$LANGUAGE" \
+      --language "$LANGUAGE" \
       --output_path "${OUTPUT_DIR}/${MODEL_NAME_HF##*/}_${LANGUAGE}.jsonl" \
       --cache_dir "$CACHE_DIR" \
       --split "test" > "$OUTPUT_FILE" 2> "$ERROR_FILE" &

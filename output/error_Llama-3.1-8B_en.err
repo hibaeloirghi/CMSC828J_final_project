@@ -1,4 +1,1 @@
-usage: predict_labels.py [-h] --model_name_hf MODEL_NAME_HF --language
-                         LANGUAGE --output_path OUTPUT_PATH
-                         [--cache_dir CACHE_DIR] [--split SPLIT]
-predict_labels.py: error: the following arguments are required: --language
+Downloading shards:   0%|          | 0/4 [00:00<?, ?it/s]
