@@ -11,7 +11,7 @@ from tqdm import tqdm
 
 random.seed(24)
 
-own_cache_dir = "/fs/clip-scratch/eloirghi/CMSC828J_final_project/.cache"
+own_cache_dir = "/fs/classhomes/fall2024/cmsc723/c7230002/CMSC828J_final_project/.cache"
 os.environ["HF_HOME"] = own_cache_dir
 os.environ["HF_DATASETS"] = own_cache_dir
 
