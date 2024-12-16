@@ -44,7 +44,8 @@ def main():
     model = AutoModelForCausalLM.from_pretrained(args.model_name_hf, cache_dir=args.cache_dir, torch_dtype=dtype)
 
     pipe = pipeline(
-        "text-generation",
+        "translation",
+        #"text-generation",
         model=model,
         tokenizer=tokenizer,
         device="cuda",
