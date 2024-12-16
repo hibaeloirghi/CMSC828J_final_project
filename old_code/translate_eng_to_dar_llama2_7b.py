@@ -34,8 +34,6 @@ if __name__ == "__main__":
 
     # Open output file for writing
     with jsonlines.open(args.output_path, mode="w") as outfile:
-        count = 0  # Counter to process only 5 pairs
-
         for line in dataset:
             # Extract the English premise and hypothesis
             premise_en = line["premise"].get("en")
@@ -56,7 +54,7 @@ if __name__ == "__main__":
             premise_prompt = f"Translate the following English sentence to Moroccan Arabic. Only respond with the translated sentence in Arabic letters.\n\nEnglish: {premise_en}\nMoroccan Arabic:"
 
             inputs = tokenizer(premise_prompt, return_tensors="pt", padding=True, truncation=True).to("cuda")
-            outputs = model.generate(inputs["input_ids"], max_new_tokens=256, do_sample=False)
+            outputs = model.generate(inputs["input_ids"], max_new_tokens=256, do_sample=True)
             premise_translation = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
             # Extract only the translated text (remove the prompt from output)
@@ -65,7 +63,7 @@ if __name__ == "__main__":
             # Translate hypothesis
             hypothesis_prompt = f"Translate the following English sentence to Moroccan Arabic. Only respond with the translated sentence in Arabic letters.\n\nEnglish: {hypothesis_en}\nMoroccan Arabic:"
             inputs = tokenizer(hypothesis_prompt, return_tensors="pt", padding=True, truncation=True).to("cuda")
-            outputs = model.generate(inputs["input_ids"], max_new_tokens=256, do_sample=False)
+            outputs = model.generate(inputs["input_ids"], max_new_tokens=256, do_sample=True)
             hypothesis_translation = tokenizer.decode(outputs[0], skip_special_tokens=True)
 
             # Extract only the translated text (remove the prompt from output)
@@ -78,9 +76,9 @@ if __name__ == "__main__":
             # Write the translated line to the output
             outfile.write(line)
 
-            count += 1
-            if count >= 5:  # Stop after 5 pairs
-                break
+            #count += 1
+            #if count >= 5010:  # Stop after 5 pairs
+            #    break
 
     end_time = datetime.datetime.now()
     print(f"Time elapsed: {end_time - start_time}")

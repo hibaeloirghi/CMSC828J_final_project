@@ -1,19 +1,23 @@
 #!/bin/bash
-#SBATCH --job-name=translate_eng_to_dar_llama2_7b
-#SBATCH --output=/fs/clip-scratch/eloirghi/CMSC828J_final_project/output/translate_eng_to_dar_llama2_7b_%j.out
-#SBATCH --error=/fs/clip-scratch/eloirghi/CMSC828J_final_project/output/translate_eng_to_dar_llama2_7b_%j.error
-#SBATCH --time=23:00:00                # Increased time allocation
-#SBATCH --mem=64gb                     # Ensure sufficient memory
-#SBATCH --account=scavenger
-#SBATCH --partition=scavenger
-#SBATCH --gres=gpu:rtxa5000:1          # Allocate a specific GPU
+#SBATCH --job-name=translate_to_darija         # Job name
+#SBATCH --partition=class                   # Partition name
+#SBATCH --account=class                     # Account name
+#SBATCH --qos=high                          # QoS level (high priority)
+#SBATCH --gres=gpu:1                        # Request one GPU
+#SBATCH --cpus-per-task=8                   # Number of CPU cores
+#SBATCH --mem=127G                          # Memory allocation
+#SBATCH --time=20:00:00                     # Maximum runtime
+#SBATCH --output=translate_to_darija_%j.out   # Main output file
+#SBATCH --error=translate_to_darija_%j.err    # Main error file
+
 
 # Set environment variables for output and cache directories
-OUTPUT_DIR="/fs/clip-scratch/eloirghi/CMSC828J_final_project/output"
-CACHE_DIR="/fs/clip-scratch/eloirghi/CMSC828J_final_project/.cache"
+OUTPUT_DIR="/fs/classhomes/fall2024/cmsc723/c7230002/CMSC828J_final_project/output"
+CACHE_DIR="/fs/classhomes/fall2024/cmsc723/c7230002/CMSC828J_final_project/.cache"
 
 # Activate your Python environment
-source /fs/clip-scratch/eloirghi/CMSC828J_final_project/.venv/bin/activate
+module load cuda
+source /fs/classhomes/fall2024/cmsc723/c7230002/CMSC828J_final_project/.venv/bin/activate
 
 # Run the Python translation script
 python -u translate_eng_to_dar_llama2_7b.py \
