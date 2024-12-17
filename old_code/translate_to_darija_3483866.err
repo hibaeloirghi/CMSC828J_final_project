@@ -1,2 +1,3 @@
 Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.93s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.84s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.01s/it]
 Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+slurmstepd: error: *** JOB 3483866 ON tron47 CANCELLED AT 2024-12-16T23:31:35 ***

@@ -16,8 +16,8 @@ def clean_text(text):
 def process_jsonl(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as infile, open(output_file, 'w', encoding='utf-8') as outfile:
         for i, line in enumerate(infile):  
-            if i >= 5:  # ok star out with 5 to test
-                break
+            #if i >= 5:  # ok star out with 5 to test
+            #    break
             data = json.loads(line.strip())
             
             # clean up premise and hypothesis

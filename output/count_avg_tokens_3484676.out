@@ -1,0 +1,12 @@
+File: /fs/classhomes/fall2024/cmsc723/c7230002/CMSC828J_final_project/output/clean_translate_ar_to_dar_llama2_7b_3483915.jsonl
+Average number of tokens in premise: 32.3
+Average number of tokens in hypothesis: 16.9
+
+File: /fs/classhomes/fall2024/cmsc723/c7230002/CMSC828J_final_project/output/clean_translate_eng_to_dar_llama2_7b_3483866.jsonl
+Average number of tokens in premise: 18.5
+Average number of tokens in hypothesis: 9.2
+
+File: /fs/classhomes/fall2024/cmsc723/c7230002/CMSC828J_final_project/human_translated_30_pairs.jsonl
+Average number of tokens in premise: 13.2
+Average number of tokens in hypothesis: 7.2
+
